@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVICE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900 min-h-screen flex flex-col items-center justify-between">
+
+    <!-- Header -->
+    <header class="bg-black p-4 text-white font-bold font-serif w-full text-center">
+        The Advice Station:
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex flex-col items-center w-full px-4 mt-6">
+        
+        <!-- Button Container -->
+        <div class="flex justify-center gap-4 p-4">
+            <button id="new" class="rounded-xl bg-white text-blue-500 px-4 py-2 font-semibold hover:bg-gray-200 transition">
+                New Advice!
+            </button>
+            <button id="delete" class="rounded-xl bg-white text-blue-500 px-4 py-2 font-semibold hover:bg-gray-200 transition">
+                Delete Advice!
+            </button>
+            <button id="tweet" class="rounded-xl bg-white text-blue-500 px-4 py-2 font-semibold hover:bg-gray-200 transition">
+                Tweet Advice!
+            </button>
+        </div>
+
+        <!-- Advice Box -->
+        <div class="bg-white p-8 rounded-lg shadow-lg text-center max-w-lg w-full mt-4">
+            <p id="result" class="text-lg font-semibold text-gray-700"></p>
+            <p id="date" class="text-sm text-gray-500 mt-2"></p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="flex justify-center mt-6">
+            <img class="h-48 w-auto object-cover rounded-xl shadow-lg" 
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqxZQDLK6U7GJg2LXot9tgakUkik-Q1IX4Aw&s" 
+                 alt="Good Advice Image">
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center p-4 w-full mt-8">
+        &copy; All Rights Reserved
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
+
